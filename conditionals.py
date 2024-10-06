@@ -1,15 +1,15 @@
-# 1- Classify a Person's Age Group: Child(<13), Teen(13-19), Adult(20-49),Senior(50+)
+# 2- Movie tickets are priced based on age: $12 for adults (18 and over), $8 for children. Everyone gets a $2 discount on Wednesday.
 
+age= int(input("Enter Age:"))
+day=(input("Enter the Day of the Week:"))
 
-age= int(input("Enter the Age:"))
+if age<18:
+    if day==("wednesday" or "Wednesday"):
+        print("Ticket Price is $6")
+    else:
+        print("Ticket Price is $8")
 
-if age <13:
-    print("Child")
-elif age<20:
-    print("Teenager")
-elif age<50:
-    print("Adult") 
+elif age>18 and (not("wednesday" or "Wednesday")):
+    print("Ticket Price is $12")
 else:
-    print("Senior")   
-
-
+    print("Ticket Price is $10 ")
