@@ -9,9 +9,9 @@ color="green"
 if fruit=="Banana":
     if color=="green":
         print("Unripe")
-    if color=="yellow":
+    elif color=="yellow":
         print("Ripe")
-    if color=="brown":
+    elif color=="brown":
         print("OverRipe")
 else:
     print("I dont have knowledge of other Fruits As of Now")
