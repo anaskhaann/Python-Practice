@@ -10,7 +10,11 @@ x = 99
 
 def func2():
     # This will not change the value of x globally
-    x= 10
+    
+    # To change this use keyword "global" but this is not a good practice
+    global x
+    x=10
+    
     
 func2()
 print(x)
