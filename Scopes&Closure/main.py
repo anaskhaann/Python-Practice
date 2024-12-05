@@ -1,11 +1,8 @@
-username="GlobalVar"
+x = 99
 
-def func():
-    # Now this cannot be access outside
-    username="LocalVar"
-    print(username)
-    
-func()
+def calc(y):
+    # Here x is global and y is local
+    z=x+y
+    return z
 
-# This will print global
-print(username)
+print(calc(3))
