@@ -1,4 +1,4 @@
-# username="GlobalVar"
+username="GlobalVar"
 
 def func():
     # Now this cannot be access outside
@@ -7,5 +7,5 @@ def func():
     
 func()
 
-# The below print will give error
-# print(username)
+# This will print global
+print(username)
