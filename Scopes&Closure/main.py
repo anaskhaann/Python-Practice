@@ -1,7 +1,11 @@
-username="GlobalVar"
+# username="GlobalVar"
 
 def func():
-    # THis will access the global declared variable
+    # Now this cannot be access outside
+    username="LocalVar"
     print(username)
     
 func()
+
+# The below print will give error
+# print(username)
