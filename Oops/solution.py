@@ -1,23 +1,21 @@
 class Car:
     def __init__(self,brand,model):
-        self.brand = brand
+        self.__brand = brand
         self.model = model
+    
+    # Good practice to make name of getter like this
+    def get_brand(self):
+        return self.__brand +"!!!"
 
     def full_name(self):
-        return f"{self.brand} {self.model}"
+        return f"{self.__brand} {self.model}"
 
-
-# this means it is inheriting from parent class named Car
 class ElectricCar(Car):
     def __init__(self,brand,model,battery_size):
-        # we have already created brand and model in parent class in __init__ method
         super().__init__(brand,model)
         self.battery_size = battery_size
 
 my_new_car=ElectricCar("Tesla", "CyberTruck", "80kWH")
 
-print(my_new_car)
-print(my_new_car.brand)
-print(my_new_car.model)
-print(my_new_car.battery_size)
-print(my_new_car.full_name())
+# print(my_new_car.__brand) #THis will give the error
+print(my_new_car.get_brand())
