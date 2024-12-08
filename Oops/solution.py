@@ -30,8 +30,7 @@ class ElectricCar(Car):
     def fuel_type(self):
         return "Electric Current"
 
-my_car = Car ("BMW", "M5") 
+my_tesla = ElectricCar("Tesla", "Model S", "80 kWh")
 
-# changing the model
-# my_car.model = "Z4"
-print(my_car.model)
+print(isinstance(my_tesla,ElectricCar))
+print(isinstance(my_tesla,Car))
