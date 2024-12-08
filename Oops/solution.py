@@ -30,7 +30,23 @@ class ElectricCar(Car):
     def fuel_type(self):
         return "Electric Current"
 
-my_tesla = ElectricCar("Tesla", "Model S", "80 kWh")
 
-print(isinstance(my_tesla,ElectricCar))
-print(isinstance(my_tesla,Car))
+class Battery:
+    def batteryInfo(self):
+        return "This is Battery"
+
+class Engine:
+    def engineInfo(self):
+        return "This is Engine"
+
+class ElectricCarTwo(Car,Battery,Engine):
+    pass
+
+my_car = ElectricCarTwo("Tesla", "Model S")
+
+print(my_car)
+print(my_car.full_name())
+print(my_car.model)
+print(my_car.get_brand())
+print(my_car.batteryInfo())
+print(my_car.engineInfo())
