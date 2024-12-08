@@ -2,9 +2,14 @@
 
 
 class Car():
-    brand= None
-    model = None
+    # self is used to establish a connection to access the class attributes(variables)
+    def __init__(self,brand,model):
+        
+        # Self.brand means class one and RHS brand means which user is giving as attribute while creating object
+        self.brand = brand
+        self.model = model
 
-
-my_car = Car()
+my_car = Car("BMW", "M5")
 print(my_car) 
+print(my_car.brand) 
+print(my_car.model) 
