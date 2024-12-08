@@ -3,19 +3,25 @@ class Car:
         self.__brand = brand
         self.model = model
     
-    # Good practice to make name of getter like this
     def get_brand(self):
         return self.__brand +"!!!"
 
     def full_name(self):
         return f"{self.__brand} {self.model}"
+    
+    def fuel_type(self):
+        return "Petrol or Diesel"
 
 class ElectricCar(Car):
     def __init__(self,brand,model,battery_size):
         super().__init__(brand,model)
         self.battery_size = battery_size
+    
+    def fuel_type(self):
+        return "Electric Current"
 
-my_new_car=ElectricCar("Tesla", "CyberTruck", "80kWH")
+my_tesla=ElectricCar("Tesla", "CyberTruck", "80kWH")
+print(my_tesla.model,my_tesla.fuel_type())
 
-# print(my_new_car.__brand) #THis will give the error
-print(my_new_car.get_brand())
+safari = Car("Toyota", "Supra")
+print(safari.model,safari.fuel_type())
