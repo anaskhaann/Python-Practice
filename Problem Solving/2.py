@@ -14,12 +14,27 @@ Constraints:
 * You cannot use built-in functions like sum(map(int, str(num))).
 """
 
+# Approach 1:
 
-num = (input("Enter a number: "))
+# num = (input("Enter a number: "))
+
+# sum=0
+
+# for i in num:
+#     sum+= int(i)
+
+# print(sum)
+
+# Approach 2: Using Arithmetic Operation (Efficient)
+
+num = int(input("Enter a number: "))
 
 sum=0
 
-for i in num:
-    sum+= int(i)
+while num>0:
+
+    digit= num % 10 #this will gives the last digit
+    sum+= digit #add last digit first
+    num = num // 10 #doing floor division to remove after decimal digit i.e last digit (this will give value in int)
 
 print(sum)
