@@ -1,5 +1,10 @@
 # Python-Practice
+
 This is just for my Python Practice And Nothing Else
+
+## Visualize Your Code for Better Understanding
+
+visit [Python Tutor](https://pythontutor.com/visualize.html#mode=edit)
 
 # questions on conditionals
 
@@ -45,14 +50,12 @@ Problem: Choose a mode of transportation based on the distance (e.g., <3 km: Wal
 
 </details>
 
-
 <details>
 <summary>7. Coffee Customization
 </summary>
 Problem: Customize a coffee order: "Small", "Medium", or "Large" with an option for "Extra shot" of espresso.
 
 </details>
-
 
 <details>
 <summary>8. Password Strength Checker
@@ -61,14 +64,12 @@ Problem: Check if a password is "Weak", "Medium", or "Strong". Criteria: < 6 cha
 
 </details>
 
-
 <details>
 <summary>9. Leap Year Checker
 </summary>
 Problem: Determine if a year is a leap year. (Leap years are divisible by 4, but not by 100 unless also divisible by 400).
 
 </details>
-
 
 <details>
 <summary>10. Pet Food Recommendation
@@ -78,4 +79,5 @@ Problem: Recommend a type of pet food based on the pet's species and age. (e.g.,
 </details>
 
 ---
+
 ## Ending this here and start solving on leetcode/neetcode/hackerrank for better edge cases and practice
